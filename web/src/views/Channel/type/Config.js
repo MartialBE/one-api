@@ -66,7 +66,7 @@ const typeConfig = {
     },
     prompt: {
       other:
-        '输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions,如果需要禁用版本号，请输入 disable'
+        '输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions；如果需要使用gpt4free指定渠道，例如，gpt4free,FreeChatgpt,就会请求https://xxx.com/v1/chat/completions?provider=FreeChatgpt；如果需要禁用版本号，请输入 disable'
     }
   },
   3: {

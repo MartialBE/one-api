@@ -969,7 +969,7 @@
   "请选择该渠道所支持的模型,你也可以输入通配符*来匹配模型，例如：gpt-3.5*，表示支持所有gpt-3.5开头的模型，*号只能在最后一位使用，前面必须有字符，例如：gpt-3.5*是正确的，*gpt-3.5是错误的": "このチャネルでサポートされているモデルを選択してください。たとえば、gpt-3.5* のように、ワイルドカード文字 * を入力することもできます。これは、gpt-3.5 で始まるすべてのモデルが使用できることを意味します。最後の桁に があり、その前に文字が必要です。例: gpt-3.5* は正しいですが、*gpt-3.5 は間違っています。",
   "请选择该渠道所支持的用户组": "このチャンネルでサポートされているユーザー グループを選択してください",
   "请随意填写": "お気軽にご記入ください",
-  "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions,如果需要禁用版本号，请输入 disable": "入力後、リクエストアドレスのv1が置き換えられます。例：freeapi、チャットをリクエストする場合は、https://xxx.com/freeapi/chat/completions となります。バージョン番号を無効にする必要がある場合は、「disable」と入力してください。",
+  "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions；如果需要使用gpt4free指定渠道，例如，gpt4free,FreeChatgpt,就会请求https://xxx.com/v1/chat/completions?provider=FreeChatgpt；如果需要禁用版本号，请输入 disable": "入力後、リクエストアドレスのv1が置き換えられます。例：freeapi、チャットをリクエストする場合は、https://xxx.com/freeapi/chat/completions となります。もし `gpt4free` を使用して特定のチャネルを指定する場合、例えば `gpt4free,FreeChatgpt` のように、リクエストは `https://xxx.com/v1/chat/completions?provider=FreeChatgpt` になります。バージョン番号を無効にする必要がある場合は、「disable」と入力してください。",
   "默认 API 版本": "デフォルトのAPIバージョン",
   "Header 配置": "ヘッダー構成",
   "alloy 映射": "合金マッピング",

@@ -936,7 +936,7 @@
   "从OpenAI获取模型列表": "从OpenAI获取模型列表",
   "从渠道获取模型列表": "从渠道获取模型列表",
   "替换 API 版本": "替换 API 版本",
-  "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions,如果需要禁用版本号，请输入 disable": "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions,如果需要禁用版本号，请输入 disable",
+  "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions；如果需要使用gpt4free指定渠道，例如，gpt4free,FreeChatgpt,就会请求https://xxx.com/v1/chat/completions?provider=FreeChatgpt；如果需要禁用版本号，请输入 disable": "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions；如果需要使用gpt4free指定渠道，例如，gpt4free,FreeChatgpt,就会请求https://xxx.com/v1/chat/completions?provider=FreeChatgpt；如果需要禁用版本号，请输入 disable",
   "AZURE_OPENAI_ENDPOINT": "AZURE_OPENAI_ENDPOINT",
   "默认 API 版本": "默认 API 版本",
   "请填写AZURE_OPENAI_ENDPOINT": "请填写AZURE_OPENAI_ENDPOINT",

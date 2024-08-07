@@ -112,13 +112,27 @@ func (p *OpenAIProvider) GetFullRequestURL(requestURL string, modelName string) 
 
 	} else if p.Channel.Type == config.ChannelTypeCustom && p.Channel.Other != "" {
 		replaceValue := p.Channel.Other
+		handledGpt4free := false
+
 		if replaceValue == "disable" {
 			replaceValue = ""
 		} else {
-			replaceValue = "/" + replaceValue
+			if strings.HasPrefix(replaceValue, "gpt4free,") {
+				variable := strings.TrimPrefix(replaceValue, "gpt4free,")
+				if !strings.Contains(requestURL, "?") {
+					requestURL = fmt.Sprintf("%s?provider=%s", requestURL, variable)
+				} else {
+					requestURL = fmt.Sprintf("%s&provider=%s", requestURL, variable)
+				}
+				handledGpt4free = true
+			} else {
+				replaceValue = "/" + replaceValue
+			}
 		}
 
-		requestURL = strings.Replace(requestURL, "/v1", replaceValue, 1)
+		if !handledGpt4free {
+			requestURL = strings.Replace(requestURL, "/v1", replaceValue, 1)
+		}
 	}
 
 	if strings.HasPrefix(baseURL, "https://gateway.ai.cloudflare.com") {

@@ -969,7 +969,7 @@
   "请选择该渠道所支持的模型,你也可以输入通配符*来匹配模型，例如：gpt-3.5*，表示支持所有gpt-3.5开头的模型，*号只能在最后一位使用，前面必须有字符，例如：gpt-3.5*是正确的，*gpt-3.5是错误的": "Please select the model supported by this channel. You can also enter the wildcard character * to match the model. For example: gpt-3.5*, which means that all models starting with gpt-3.5 are supported. The * sign can only be used in the last digit, and there must be characters in front of it. \n, for example: gpt-3.5* is correct, *gpt-3.5 is wrong",
   "请选择该渠道所支持的用户组": "Please select the user group supported by this channel",
   "请随意填写": "Please feel free to fill in",
-  "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions,如果需要禁用版本号，请输入 disable": "After input, v1 in the request address will be replaced. For example: freeapi, when requesting chat, it will become https://xxx.com/freeapi/chat/completions. If you need to disable the version number, please enter disable",
+  "输入后，会替换请求地址中的v1，例如：freeapi，则请求chat时会变成https://xxx.com/freeapi/chat/completions；如果需要使用gpt4free指定渠道，例如，gpt4free,FreeChatgpt,就会请求https://xxx.com/v1/chat/completions?provider=FreeChatgpt；如果需要禁用版本号，请输入 disable": "After input, v1 in the request address will be replaced. For example: freeapi, when requesting chat, it will become https://xxx.com/freeapi/chat/completions. If you need to use `gpt4free` to specify a channel, for example, `gpt4free,FreeChatgpt`, the request will be `https://xxx.com/v1/chat/completions?provider=FreeChatgpt`. If you need to disable the version number, please enter disable",
   "默认 API 版本": "Default API version",
   "Header 配置": "Header configuration",
   "alloy 映射": "alloy mapping",
